@@ -93,10 +93,9 @@ todayPlanner.forEach(function(thisHour) {
 
     // save button
     var saveButton = $("<i class='far fa-save fa-lg'></i>")
-    var savePlan = $("<button>")
-        .attr({
-            "class": "col-1 saveBtn"
-    });
+    var savePlan = $("<button>").addClass("col-1 saveBtn");
+
+
     savePlan.append(saveButton);
     hourRow.append(hourField, planData, savePlan);
 })
